@@ -32,7 +32,7 @@
         <entry file="file://$PROJECT_DIR$/lll.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <caret line="0" column="3" lean-forward="false" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -65,8 +65,8 @@
       <list>
         <option value="$PROJECT_DIR$/.ignore" />
         <option value="$PROJECT_DIR$/lines.py" />
-        <option value="$PROJECT_DIR$/lll.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/lll.py" />
       </list>
     </option>
   </component>
@@ -450,7 +450,7 @@
     <entry file="file://$PROJECT_DIR$/lll.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="3" lean-forward="false" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
           <folding />
         </state>
       </provider>
