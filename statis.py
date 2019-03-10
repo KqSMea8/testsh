@@ -50,7 +50,7 @@ class Gitlines():
         '''
         a = subprocess.check_output('git log --author="{0}@alibaba-inc.com" '
                                     '--numstat --after={1}-{2}-{3}'.format(
-                                    self.id,self.year,self.mounth,self.day)).decode('gbk')
+                                    self.id,self.year,self.mounth,self.day)).decode()
         lines_num = [x for x in a.split('\n') if x ]
         dict = {int(x.split('\t')[0]):int(x.split('\t')[1]) for x in lines_num if x[0].isdigit()}
         insert_lines = sum(dict.keys())
