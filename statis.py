@@ -9,6 +9,9 @@ year ="2001"
 mounth = "3"
 day = "7"
 zzz = 2
+a = 1
+b = 2
+c = 3
 class Gitlines():
 
     def __init__(self,id,year,mounth,day):
