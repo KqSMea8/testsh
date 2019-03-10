@@ -23,27 +23,26 @@ class Gitlines():
         subprocess.call("git add .")
         subprocess.call("git commit -m 代码统计")
         p = subprocess.call("git pull")
+        print(p)
     def selectbranch(self):
         '''选择分支'''
+
+
+        branch = input("请输入分支:")
+        if branch in self.branch:
+            print("统计过的分支")
+            return None
         subprocess.call("git add .")
         subprocess.call("git commit -m 代码统计")
-        p = subprocess.call("git pull")
-        if not p:
-            branch = input("请输入分支:")
-            if branch in self.branch:
-                print("统计过的分支")
-                return None
-            subprocess.call("git add .")
-            subprocess.call("git commit -m 代码统计")
-            status = subprocess.call("git checkout {}".format(branch))
-            print(status)
-            if status:
+        status = subprocess.call("git checkout {}".format(branch))
+        print(status)
+        if status:
 
-                print('分支不存在')
-                return None
+            print('分支不存在')
+            return None
 
-            self.branch.append(branch)
-            self.getresult()
+        self.branch.append(branch)
+        self.getresult()
     def getresult(self):
         '''
         获得统计结果
