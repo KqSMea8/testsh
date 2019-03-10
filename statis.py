@@ -18,11 +18,16 @@ class Gitlines():
         self.insert_lines = 0
         self.delete_lines = 0
         self.branch = []
-    def selectbranch(self):
+    def slovecontradiction(self):
+        '''解决冲突'''
         subprocess.call("git add .")
         subprocess.call("git commit -m 代码统计")
         p = subprocess.call("git pull")
-
+    def selectbranch(self):
+        '''选择分支'''
+        subprocess.call("git add .")
+        subprocess.call("git commit -m 代码统计")
+        p = subprocess.call("git pull")
         if not p:
             branch = input("请输入分支:")
             if branch in self.branch:
@@ -64,5 +69,5 @@ class Gitlines():
 
 if __name__ == '__main__':
     lines = Gitlines(id,year,mounth,day)
-    while True:
-        lines.selectbranch()
+    # while True:
+    lines.slovecontradiction()
