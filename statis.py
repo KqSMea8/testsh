@@ -19,6 +19,8 @@ class Gitlines():
         self.delete_lines = 0
         self.branch = []
     def selectbranch(self):
+        subprocess.call("git add .")
+        subprocess.call("git commit -m 代码统计")
         p = subprocess.call("git pull")
 
         if not p:
